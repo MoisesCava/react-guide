@@ -13,23 +13,40 @@ const app = props => {
     [
       {
         name: 'Moises',
-        age: 24
+        age: 24,
+        id: 1
       },
       {
         name: 'Maria',
-        age: 23
+        age: 23,
+        id: 2
       },
       {
         name: 'Gabriela',
-        age: 23
+        age: 23,
+        id: 3
       }
     ]
   );
 
+  const nameChangeHandler = (event, id) => {
+
+    const personIndex = personsState.findIndex(p =>{
+      return p.id === id;
+    });
+
+    const person = {...personsState[personIndex]};
+
+    person.name = event.target.value;
+
+    const persons = [...personsState]
+    persons[personIndex] = person;
 
 
 
-  console.log(personsState);
+    setPersonsState(persons);
+  }
+  
 
   const deletePersonHandler = (personIndex) => {
     console.log('dieron click');
@@ -43,8 +60,6 @@ const app = props => {
 
       
       return [...prevState];
-
-
 
     })
   }
@@ -64,6 +79,8 @@ const app = props => {
             click={() => deletePersonHandler(index)}
             name={person.name}
             age={person.age}
+            id={person.id}
+            changed = {(event)=> nameChangeHandler(event, person.id)}
           />
         }) : null}
       </div>
