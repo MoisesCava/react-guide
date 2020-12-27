@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 import Person from './Person/Person'
-
+import PaymentButton from './PaymentButton/PaymentButton'
 
 
 const app = props => {
@@ -89,10 +89,7 @@ const app = props => {
 
   return (
     <div className="App">
-      <h1>Hola soy la primera app en React</h1>
-      <p>Si funciona</p>
-      <button onClick={togglePersonHandler}>cambiar nombre</button>
-      {persons}
+      <PaymentButton/>
     </div>
   );
 }
