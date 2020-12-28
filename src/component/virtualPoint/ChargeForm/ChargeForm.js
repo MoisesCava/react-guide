@@ -1,5 +1,7 @@
 
 import React from "react";
+import DNI from "../../Commoms/DNI/DNI";
+import PhoneNumber from "../../Commoms/PhoneNumber/PhoneNumber";
 
 
 
@@ -23,36 +25,14 @@ const ChargeForm = () => (
                             <div className="card-body">
                                 <form className="form" autoComplete="on" id="paymentform">
                                     <div className="form-group">
-                                        <div className="row form-group">
-                                            <div className="col-sm-3 ">
-                                                <label> Prefijo </label>
-                                                <select className="form-control" id="prefijo">
-                                                    <option> 0424 </option>
-                                                    <option> 0416 </option>
-                                                    <option> 0412 </option>
-                                                </select>
-                                            </div>
-                                            <div className="col">
-                                                <label> Teléfono </label>
-                                                <input type="text" id="telefono" className="form-control" required />
-                                                <div className="invalid-feedback"> Este campo es requerido </div>
-                                            </div>
-                                        </div>
-                                        <div className="row form-group">
-                                            <div className="col-sm-3">
-                                                <label> Cédula o RIF </label>
-                                                <select className="form-control" id="id_tipo">
-                                                    <option> V </option>
-                                                    <option> E </option>
-                                                    <option> RIF </option>
-                                                </select>
-                                            </div>
-                                            <div className="col">
-                                                <label> Documento de identificación </label>
-                                                <input type="text" id="identificacion" className="form-control" required />
-                                                <div className="invalid-feedback"> Este campo es requerido </div>
-                                            </div>
-                                        </div>
+
+
+                                        <PhoneNumber />
+
+
+                                        <DNI/>
+
+
                                         <div className="row form-group text-left">
                                             <div className="col">
                                                 <label> Banco receptor </label>
