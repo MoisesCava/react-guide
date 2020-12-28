@@ -3,7 +3,7 @@ import React from "react";
 import './Dashboard.css'
 
 import * as Icon from 'react-feather';
-import Chart from "./Chart/Chart";
+
 
 const Dashboard = () => (
 
@@ -62,7 +62,7 @@ const Dashboard = () => (
                         </div>
                     </div>
 
-                    <Chart/>
+                    <canvas className="my-4" id="myChart" width="900" height="380"></canvas>
 
                     <h2>Transacciones</h2>
                     <div className="table-responsive">
