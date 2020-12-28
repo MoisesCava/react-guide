@@ -1,7 +1,9 @@
 
 import React from "react";
-import DNI from "../../Commoms/DNI/DNI";
-import PhoneNumber from "../../Commoms/PhoneNumber/PhoneNumber";
+import Bank from "../../Commons/Bank/Bank";
+import DNI from "../../Commons/DNI/DNI";
+import OTP from "../../Commons/OTP/OTP";
+import PhoneNumber from "../../Commons/PhoneNumber/PhoneNumber";
 
 
 
@@ -34,15 +36,8 @@ const ChargeForm = ({onPayClick}) => (
 
 
                                         <div className="row form-group text-left">
-                                            <div className="col">
-                                                <label> Banco receptor </label>
-                                                <select className="form-control" id="banco">
-                                                    <option> Banesco </option>
-                                                    <option> Mercantil </option>
-                                                    <option> Provincial </option>
-                                                    <option> Banco de Venezuela </option>
-                                                </select>
-                                            </div>
+                                            
+                                            <Bank/>
 
                                             <div className="col-sm-3">
                                                 <label> Tipo Moneda </label>
@@ -70,13 +65,9 @@ const ChargeForm = ({onPayClick}) => (
                                                 <div className="invalid-feedback"> Este campo es requerido </div>
                                             </div>
                                         </div>
-                                        <div className="row form-group text-left">
-                                            <div className="col">
-                                                <label> OTP </label>
-                                                <input type="password" className="form-control" required />
-                                                <div className="invalid-feedback"> Este campo es requerido </div>
-                                            </div>
-                                        </div>
+
+                                        <OTP/>
+
                                     </div>
                                     <div className="row">
                                         <div className="col">
