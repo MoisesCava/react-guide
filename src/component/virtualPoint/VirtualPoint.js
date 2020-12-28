@@ -1,11 +1,11 @@
 import React, { useReducer, useState } from "react";
 import UserValidation from "../Commons/UserValidation/UserValidation";
 import PayComfirm from "./PayComfirm/PayComfirm";
-import PaySucces from "./PaySucces/PaySucces";
+import SuccessCharge from "./SuccessCharge/SuccessCharge";
 
 
 const VirtualPoint = () => {
-    
+
     const [modal, setModal] = useState(false);
 
     const toggle = () => setModal(!modal)
@@ -16,11 +16,11 @@ const VirtualPoint = () => {
         render: [
             {
                 stepNumber: 1,
-                component: <UserValidation onOkClick={() => {dispatch({type:"next-step"})}} />
+                component: <UserValidation onOkClick={() => { dispatch({ type: "next-step" }) }} />
             },
             {
                 stepNumber: 2,
-                component: <PayComfirm onPayClick={toggle} onBackClick={() => { dispatch({type:'previus-step'}) }}  />
+                component: <PayComfirm onPayClick={toggle} onBackClick={() => { dispatch({ type: 'previus-step' }) }} />
             }
         ]
     }
@@ -48,18 +48,14 @@ const VirtualPoint = () => {
                 return state
 
         }
-
-
     }
-
-
     const [stepState, dispatch] = useReducer(stepReducer, currentStep);
 
 
-   
 
 
-    const [pago, setPago] = useState({
+
+    const [cobro, setCobro] = useState({
 
         ref: '#011115f',
         amount: '1000',
@@ -73,7 +69,7 @@ const VirtualPoint = () => {
 
 
 
-    
+
 
 
     let ComponentRender = stepState.render.find(step => {
@@ -94,9 +90,9 @@ const VirtualPoint = () => {
 
             {ComponentRender}
 
-            <PaySucces onOkClick={toggle} title="my modal" modal={modal} onToggle={toggle} pago={pago}>
+            <SuccessCharge onOkClick={toggle} title="my modal" modal={modal} onToggle={toggle} cobro={cobro}>
                 <p>cuerpo  del modal</p>
-            </PaySucces>
+            </SuccessCharge>
 
         </div>
 

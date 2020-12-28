@@ -1,9 +1,9 @@
 import React from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
-import './PaySucces.css';
+import './PaySuccess.css';
 
-const PaySucces = ({ onOkClick, title, onToggle, modal, pago }) => (
+const PaySucces = ({ onClick, title, onToggle, modal, pago }) => (
 
     <Modal isOpen={modal} toggle={onToggle} >
 
@@ -14,21 +14,17 @@ const PaySucces = ({ onOkClick, title, onToggle, modal, pago }) => (
         <ModalBody>
 
             <div className="payItem">
-                <h5>Numero de Referencia:</h5>
+                <h5>Total:</h5>
                 <span> {pago.ref} </span>
             </div>
 
             <div className="payItem">
-                <h5>Monto:</h5>
+                <h5>Referencia:</h5>
                 <span> {pago.amount} </span>
             </div>
             <div className="payItem">
-                <h5>Fecha:</h5>
+                <h5>Fecha y Hora:</h5>
                 <span> {pago.date} </span>
-            </div>
-            <div className="payItem">
-                <h5>Identificacion:</h5>
-                <span> {pago.id} </span>
             </div>
             <div className="payItem">
                 <h5>Telefono:</h5>
@@ -38,13 +34,16 @@ const PaySucces = ({ onOkClick, title, onToggle, modal, pago }) => (
                 <h5>Banco:</h5>
                 <span> {pago.bank} </span>
             </div>
-
+            <div className="payItem">
+                <h5>Descripción:</h5>
+                <span> {pago.description} </span>
+            </div>
 
         </ModalBody>
 
 
         <ModalFooter>
-            <Button color="primary" onClick={onOkClick}>Do Something</Button>{' '}
+            <Button color="primary" onClick={onClick}>Do Something</Button>{' '}
             <Button color="secondary" onClick={onToggle}>Cancel</Button>
         </ModalFooter>
 

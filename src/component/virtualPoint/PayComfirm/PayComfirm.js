@@ -1,4 +1,9 @@
 import React from "react";
+import Bank from "../../Commons/Bank/Bank";
+
+
+
+
 
 
 import OTP from "../../Commons/OTP/OTP";
@@ -8,7 +13,6 @@ const PayComfirm = ({ onBackClick, onPayClick }) => (
 
     <div className="PaymentButton py-5">
 
-        {console.log(onPayClick)}
         <div className="row">
             <div className="col-md-12">
                 <h1> Virtual Point </h1>
