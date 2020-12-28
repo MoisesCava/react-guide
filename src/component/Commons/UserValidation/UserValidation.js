@@ -43,7 +43,9 @@ const UserValidation = ({ onOkClick }) => (
 
 
 
-                                        <Bank />
+                                        <div className="row form-group text-left">
+                                            <Bank />
+                                        </div>
 
 
                                     </div>

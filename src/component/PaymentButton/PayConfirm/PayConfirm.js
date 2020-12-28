@@ -1,11 +1,7 @@
 import React from 'react'
-import Bank from '../../Commons/Bank/Bank'
 import OTP from '../../Commons/OTP/OTP'
-import DNI from "../../Commons/DNI/DNI";
-import PhoneNumber from "../../Commons/PhoneNumber/PhoneNumber";
 
-
-const PaymentForm = ({ onPayClick }) => (
+const PayConfirm = ({ onBackClick, onPayClick }) => (
     <div>
         <div className="PaymentButton py-5">
             <div className="row">
@@ -20,15 +16,6 @@ const PaymentForm = ({ onPayClick }) => (
                                 <div className="card-body">
                                     <form className="form" autoComplete="on" id="paymentform">
                                         <div className="form-group">
-
-                                            <PhoneNumber />
-
-                                            <DNI />
-
-                                            <div className="row form-group text-left">
-                                                <Bank />
-                                            </div>
-
                                             <div className="row form-group text-left">
                                                 <div className="col">
                                                     <label> Concepto </label>
@@ -40,7 +27,7 @@ const PaymentForm = ({ onPayClick }) => (
                                         </div>
                                         <div className="row">
                                             <div className="col">
-                                                <button type="button" className="btn btn-secondary btn-block"> Cancelar </button>
+                                                <button type="button" className="btn btn-secondary btn-block" onClick={onBackClick}> Cancelar </button>
 
                                             </div>
                                             <div className="col">
@@ -58,4 +45,4 @@ const PaymentForm = ({ onPayClick }) => (
     </div>
 )
 
-export default PaymentForm;
+export default PayConfirm;

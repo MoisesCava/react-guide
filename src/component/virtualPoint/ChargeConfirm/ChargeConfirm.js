@@ -1,15 +1,7 @@
 import React from "react";
-import Bank from "../../Commons/Bank/Bank";
-
-
-
-
-
-
 import OTP from "../../Commons/OTP/OTP";
 
-
-const PayComfirm = ({ onBackClick, onPayClick }) => (
+const ChargeConfirm = ({ onBackClick, onPayClick }) => (
 
     <div className="PaymentButton py-5">
 
@@ -31,20 +23,15 @@ const PayComfirm = ({ onBackClick, onPayClick }) => (
 
 
                                         <div className="row form-group text-left">
+                                            <div className="col">
+                                                <label> Tipo Moneda </label>
+                                                <select className="form-control" id="banco">
+                                                    <option> Bsf. </option>
+                                                    <option> $ </option>
 
-
-                                            <label> Tipo Moneda </label>
-                                            <select className="form-control" id="banco">
-                                                <option> Bsf. </option>
-                                                <option> $ </option>
-
-                                            </select>
-
-
+                                                </select>
+                                            </div>
                                         </div>
-
-
-
                                         <div className="row form-group text-left">
                                             <div className="col">
                                                 <label> Monto </label>
@@ -89,4 +76,4 @@ const PayComfirm = ({ onBackClick, onPayClick }) => (
 )
 
 
-export default PayComfirm;
+export default ChargeConfirm;

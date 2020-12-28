@@ -1,6 +1,6 @@
 import React, { useReducer, useState } from "react";
 import UserValidation from "../Commons/UserValidation/UserValidation";
-import PayComfirm from "./PayComfirm/PayComfirm";
+import ChargeConfirm from "./ChargeConfirm/ChargeConfirm";
 import SuccessCharge from "./SuccessCharge/SuccessCharge";
 
 
@@ -20,7 +20,7 @@ const VirtualPoint = () => {
             },
             {
                 stepNumber: 2,
-                component: <PayComfirm onPayClick={toggle} onBackClick={() => { dispatch({ type: 'previus-step' }) }} />
+                component: <ChargeConfirm onPayClick={toggle} onBackClick={() => { dispatch({ type: 'previus-step' }) }} />
             }
         ]
     }
@@ -90,7 +90,7 @@ const VirtualPoint = () => {
 
             {ComponentRender}
 
-            <SuccessCharge onOkClick={toggle} title="my modal" modal={modal} onToggle={toggle} cobro={cobro}>
+            <SuccessCharge onOkClick={toggle} title="Modal de Cobro" modal={modal} onToggle={toggle} cobro={cobro}>
                 <p>cuerpo  del modal</p>
             </SuccessCharge>
 
