@@ -32,10 +32,10 @@ const Refund = (props) => {
                         </div>
                       </div>
                       <PhoneNumber />
-
                       <DNI />
-
-                      <Bank />
+                      <div className="row form-group text-left">
+                        <Bank />
+                      </div>
                     </div>
                     <div className="row form-group text-left">
                       <div className="col">
@@ -55,7 +55,7 @@ const Refund = (props) => {
                         </div>
                       </div>
                     </div>
-                    <button type="button" className="btn btn-dark btn-block">
+                    <button type="button" className="btn btn-success btn-block">
                       Solicitar Reembolso
                     </button>
                   </form>

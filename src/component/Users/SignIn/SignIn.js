@@ -19,7 +19,6 @@ const SignIn = (props) => {
                     <form className="form" autoComplete="on">
                       <Email />
                       <Password />
-
                       <button className="btn btn-success btn-block">
                         Enter
                       </button>
