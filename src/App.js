@@ -8,6 +8,7 @@ import VirtualPoint from "./component/virtualPoint/VirtualPoint";
 import Refund from './component/Refund/Refund'
 import SignIn from './component/Users/SignIn/SignIn'
 import SignUp from './component/Users/SignUp/SignUp'
+import Dashboard from './component/Dashboard/Darshboard';
 const app = props => {
 
 
@@ -49,6 +50,7 @@ const app = props => {
         <Route path="/refund" exact component={Refund} />
         <Route path="/signin" exact component={SignIn} />
         <Route path="/signup" exact component={SignUp} />
+        <Route path="/dashboard" exact component={Dashboard}/>
       </Router>
     </div>
   );
