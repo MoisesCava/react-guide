@@ -1,4 +1,6 @@
 import React from 'react'
+import Bank from '../Commons/Bank/Bank';
+import OTP from '../Commons/OTP/OTP'
 
 import './PaymentButton.css'
 
@@ -47,17 +49,7 @@ const paymentButton = () => {
                                                     <div className="invalid-feedback"> Este campo es requerido </div>
                                                 </div>
                                             </div>
-                                            <div className="row form-group text-left">
-                                                <div className="col">
-                                                    <label> Banco receptor </label>
-                                                    <select className="form-control" id="banco">
-                                                        <option> Banesco </option>
-                                                        <option> Mercantil </option>
-                                                        <option> Provincial </option>
-                                                        <option> Banco de Venezuela </option>
-                                                    </select>
-                                                </div>
-                                            </div>
+                                            <Bank/>
                                             <div className="row form-group text-left">
                                                 <div className="col">
                                                     <label> Concepto </label>
@@ -65,13 +57,7 @@ const paymentButton = () => {
                                                     <div className="invalid-feedback"> Este campo es requerido </div>
                                                 </div>
                                             </div>
-                                            <div className="row form-group text-left">
-                                                <div className="col">
-                                                    <label> OTP </label>
-                                                    <input type="password" className="form-control" required />
-                                                    <div className="invalid-feedback"> Este campo es requerido </div>
-                                                </div>
-                                            </div>
+                                            <OTP/>  
                                         </div>
                                         <div className="row">
                                             <div className="col">
