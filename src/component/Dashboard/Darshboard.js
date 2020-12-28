@@ -1,7 +1,11 @@
 import React from "react";
 
-const Dashboard = () => (
+import './Dashboard.css'
 
+import * as Icon from 'react-feather';
+import Chart from "./Chart/Chart";
+
+const Dashboard = () => (
 
     <div>
         <div className="container-fluid">
@@ -11,71 +15,34 @@ const Dashboard = () => (
                         <ul className="nav flex-column">
                             <li className="nav-item">
                                 <a className="nav-link active" href="#">
-                                    <span data-feather="home"></span>
+                                    <span>
+                                        <Icon.Home className="feather" />
+                                    </span>
                   Dashboard <span className="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">
-                                    <span data-feather="file"></span>
-                  Orders
+                                    <span data-feather="file">
+                                        <Icon.File className="feather" />
+                                    </span>
+                  Cobrar
                 </a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">
-                                    <span data-feather="shopping-cart"></span>
-                  Products
+                                    <span data-feather="shopping-cart">
+                                        <Icon.ShoppingCart className="feather" />
+                                    </span>
+                  Anular
                 </a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">
-                                    <span data-feather="users"></span>
-                  Customers
-                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    <span data-feather="bar-chart-2"></span>
-                  Reports
-                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    <span data-feather="layers"></span>
-                  Integrations
-                </a>
-                            </li>
-                        </ul>
-
-                        <h6 className="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                            <span>Saved reports</span>
-                            <a className="d-flex align-items-center text-muted" href="#">
-                                <span data-feather="plus-circle"></span>
-                            </a>
-                        </h6>
-                        <ul className="nav flex-column mb-2">
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    <span data-feather="file-text"></span>
-                  Current month
-                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    <span data-feather="file-text"></span>
-                  Last quarter
-                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    <span data-feather="file-text"></span>
-                  Social engagement
-                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    <span data-feather="file-text"></span>
-                  Year-end sale
+                                    <span data-feather="users">
+                                        <Icon.Users className="feather" />
+                                    </span>
+                  Estadísticas
                 </a>
                             </li>
                         </ul>
@@ -86,59 +53,52 @@ const Dashboard = () => (
                     <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
                         <h1 className="h2">Dashboard</h1>
                         <div className="btn-toolbar mb-2 mb-md-0">
-                            <div className="btn-group mr-2">
-                                <button className="btn btn-sm btn-outline-secondary">Share</button>
-                                <button className="btn btn-sm btn-outline-secondary">Export</button>
-                            </div>
                             <button className="btn btn-sm btn-outline-secondary dropdown-toggle">
-                                <span data-feather="calendar"></span>
-                This week
+                                <span>
+                                    <Icon.Calendar className="feather"/>
+                                </span>
+                Esta semana
               </button>
                         </div>
                     </div>
 
-                    <canvas className="my-4" id="myChart" width="900" height="380"></canvas>
+                    <Chart/>
 
-                    <h2>Section title</h2>
+                    <h2>Transacciones</h2>
                     <div className="table-responsive">
                         <table className="table table-striped table-sm">
                             <thead>
                                 <tr>
-                                    <th>#</th>
-                                    <th>Header</th>
-                                    <th>Header</th>
-                                    <th>Header</th>
-                                    <th>Header</th>
+                                    <th>Referencia</th>
+                                    <th>Fecha</th>
+                                    <th>Monto</th>
+                                    <th>Estatus</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1,001</td>
-                                    <td>Lorem</td>
-                                    <td>ipsum</td>
-                                    <td>dolor</td>
-                                    <td>sit</td>
+                                    <td>19/12/2020</td>
+                                    <td>100$</td>
+                                    <td>Acitvo</td>
                                 </tr>
                                 <tr>
                                     <td>1,002</td>
-                                    <td>amet</td>
-                                    <td>consectetur</td>
-                                    <td>adipiscing</td>
-                                    <td>elit</td>
+                                    <td>05/10/2020</td>
+                                    <td>30$</td>
+                                    <td>Activo</td>
                                 </tr>
                                 <tr>
                                     <td>1,003</td>
-                                    <td>Integer</td>
-                                    <td>nec</td>
-                                    <td>odio</td>
-                                    <td>Praesent</td>
+                                    <td>04/03/2020</td>
+                                    <td>40$</td>
+                                    <td>En espera</td>
                                 </tr>
                                 <tr>
                                     <td>1,003</td>
-                                    <td>libero</td>
-                                    <td>Sed</td>
-                                    <td>cursus</td>
-                                    <td>ante</td>
+                                    <td>16/02/2020</td>
+                                    <td>200$</td>
+                                    <td>Acitvo</td>
                                 </tr>
                             </tbody>
                         </table>

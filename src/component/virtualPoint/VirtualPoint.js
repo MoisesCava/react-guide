@@ -88,6 +88,8 @@ const VirtualPoint = () => {
 
         <div>
 
+            <h3>Virtual Point</h3>
+
             {ComponentRender}
 
             <SuccessCharge onOkClick={toggle} title="Modal de Cobro" modal={modal} onToggle={toggle} cobro={cobro}>

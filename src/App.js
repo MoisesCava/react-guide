@@ -39,6 +39,9 @@ const app = props => {
                 <li className="nav-item">
                   <NavLink to="signup" className="nav-link" > Sign Up </NavLink>
                 </li>
+                <li className="nav-item">
+                  <NavLink to="dashboard" className="nav-link" > Dashboard </NavLink>
+                </li>
               </ul>
             </div>
           </nav>

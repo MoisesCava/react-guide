@@ -75,7 +75,7 @@ const paymentButton = () => {
 
     return (
         <div>
-
+            <h3>Pago</h3>
             {ComponentRender}
             <PaySucces onClick={toggle} title="Modal de Pago" modal={modalPayment} onToggle={toggle} pago={pago}>
                 <p>cuerpo  del modal</p>

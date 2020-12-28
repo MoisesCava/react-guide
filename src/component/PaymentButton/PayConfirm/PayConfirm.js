@@ -16,6 +16,15 @@ const PayConfirm = ({ onBackClick, onPayClick }) => (
                                 <div className="card-body">
                                     <form className="form" autoComplete="on" id="paymentform">
                                         <div className="form-group">
+                                            <div className="row form-group">
+                                                <div className="col align-self-center">
+                                                    <label> Total </label>
+                                                </div>
+                                                <div className="w-100"></div>
+                                                <div className="col align-self-center">
+                                                    <h3>1000$</h3>
+                                                </div>
+                                            </div>
                                             <div className="row form-group text-left">
                                                 <div className="col">
                                                     <label> Concepto </label>
