@@ -1,38 +1,98 @@
-import React,{useState} from "react";
-import ChargeForm from "./ChargeForm/ChargeForm";
-import PaySucces from "./PaySucces/PaySucces";
-
+import React, { useReducer, useState } from "react";
+import UserValidation from "../Commons/UserValidation/UserValidation";
+import ChargeConfirm from "./ChargeConfirm/ChargeConfirm";
+import SuccessCharge from "./SuccessCharge/SuccessCharge";
 
 
 const VirtualPoint = () => {
 
-    const [modal,setModal] = useState(false);
+    const [modal, setModal] = useState(false);
+
+    const toggle = () => setModal(!modal)
+
+    const currentStep = {
+        current: 1,
+
+        render: [
+            {
+                stepNumber: 1,
+                component: <UserValidation onOkClick={() => { dispatch({ type: "next-step" }) }} />
+            },
+            {
+                stepNumber: 2,
+                component: <ChargeConfirm onPayClick={toggle} onBackClick={() => { dispatch({ type: 'previus-step' }) }} />
+            }
+        ]
+    }
 
 
-    const [pago,setPago] = useState({
+    const stepReducer = (state, action) => {
 
-        ref : '#011115f',
-        amount : '1000',
-        date : '14/01/2000',
-        id : '27042411',
-        phone : '555-5978-555',
-        bank : 'Banesco'
+        switch (action.type) {
+            case 'next-step':
+
+
+                return {
+                    ...state,
+                    current: state.current + 1
+                }
+
+
+            case 'previus-step':
+                return {
+                    ...state,
+                    current: state.current - 1
+                }
+
+            default:
+                return state
+
+        }
+    }
+    const [stepState, dispatch] = useReducer(stepReducer, currentStep);
+
+
+
+
+
+    const [cobro, setCobro] = useState({
+
+        ref: '#011115f',
+        amount: '1000',
+        date: '14/01/2000',
+        id: '27042411',
+        phone: '555-5978-555',
+        bank: 'Banesco'
 
     });
 
 
-    const toggle = () => setModal(!modal)
+
+
+
+
+
+    let ComponentRender = stepState.render.find(step => {
+
+        if (step.stepNumber === stepState.current) {
+            return true;
+        }
+
+        return false;
+
+    }).component;
+
 
 
     return (
 
         <div>
 
-            <ChargeForm onPayClick={toggle} />
+            {ComponentRender}
 
-            <PaySucces onOkClick={toggle} title="my modal" modal={modal} onToggle={toggle} pago={pago}>
-                <p>cuerpo  del modal</p>    
-            </PaySucces>
+            <SuccessCharge onOkClick={toggle} title="Modal de Cobro" modal={modal} onToggle={toggle} cobro={cobro}>
+                <p>cuerpo  del modal</p>
+            </SuccessCharge>
 
         </div>
 
