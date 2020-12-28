@@ -5,7 +5,9 @@ import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 
 import PaymentButton from '../src/component/PaymentButton/PaymentButton'
 import VirtualPoint from "./component/virtualPoint/VirtualPoint";
-
+import Refund from './component/Refund/Refund'
+import SignIn from './component/Users/SignIn/SignIn'
+import SignUp from './component/Users/SignUp/SignUp'
 const app = props => {
 
 
@@ -27,6 +29,15 @@ const app = props => {
                 <li className="nav-item">
                   <NavLink to="/virtual-point" className="nav-link" > Virtual point </NavLink>
                 </li>
+                <li className="nav-item">
+                  <NavLink to="/refund" className="nav-link" > Refund </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/signin" className="nav-link" >Sign In</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="signup" className="nav-link" > Sign Up </NavLink>
+                </li>
               </ul>
             </div>
           </nav>
@@ -35,7 +46,9 @@ const app = props => {
 
         <Route path="/" exact component={PaymentButton} />
         <Route path="/virtual-point" exact component={VirtualPoint} />
-
+        <Route path="/refund" exact component={Refund} />
+        <Route path="/signin" exact component={SignIn} />
+        <Route path="/signup" exact component={SignUp} />
       </Router>
     </div>
   );
