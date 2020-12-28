@@ -1,9 +1,6 @@
 
 import React from "react";
 import Bank from "../../Commons/Bank/Bank";
-import DNI from "../../Commons/DNI/DNI";
-import OTP from "../../Commons/OTP/OTP";
-import PhoneNumber from "../../Commons/PhoneNumber/PhoneNumber";
 
 
 
@@ -11,7 +8,7 @@ import PhoneNumber from "../../Commons/PhoneNumber/PhoneNumber";
 
 
 
-const ChargeForm = ({onPayClick}) => (
+const ChargeForm = ({ onPayClick }) => (
 
 
     <div className="PaymentButton py-5">
@@ -27,19 +24,41 @@ const ChargeForm = ({onPayClick}) => (
                             <div className="card-body">
                                 <form className="form" autoComplete="on" id="paymentform">
                                     <div className="form-group">
-
-
-                                        <PhoneNumber />
-
-
-                                        <DNI/>
-
-
+                                        <div className="row form-group">
+                                            <div className="col-sm-3 ">
+                                                <label> Prefijo </label>
+                                                <select className="form-control" id="prefijo">
+                                                    <option> 0424 </option>
+                                                    <option> 0416 </option>
+                                                    <option> 0412 </option>
+                                                </select>
+                                            </div>
+                                            <div className="col">
+                                                <label> Teléfono </label>
+                                                <input type="text" id="telefono" className="form-control" required />
+                                                <div className="invalid-feedback"> Este campo es requerido </div>
+                                            </div>
+                                        </div>
+                                        <div className="row form-group">
+                                            <div className="col-sm-3">
+                                                <label> Cédula o RIF </label>
+                                                <select className="form-control" id="id_tipo">
+                                                    <option> V </option>
+                                                    <option> E </option>
+                                                    <option> RIF </option>
+                                                </select>
+                                            </div>
+                                            <div className="col">
+                                                <label> Documento de identificación </label>
+                                                <input type="text" id="identificacion" className="form-control" required />
+                                                <div className="invalid-feedback"> Este campo es requerido </div>
+                                            </div>
+                                        </div>
                                         <div className="row form-group text-left">
                                             
                                             <Bank/>
 
-                                            <div className="col-sm-3">
+                                            <div className="col-sm-4">
                                                 <label> Tipo Moneda </label>
                                                 <select className="form-control" id="banco">
                                                     <option> Bsf. </option>
@@ -65,9 +84,13 @@ const ChargeForm = ({onPayClick}) => (
                                                 <div className="invalid-feedback"> Este campo es requerido </div>
                                             </div>
                                         </div>
-
-                                        <OTP/>
-
+                                        <div className="row form-group text-left">
+                                            <div className="col">
+                                                <label> OTP </label>
+                                                <input type="password" className="form-control" required />
+                                                <div className="invalid-feedback"> Este campo es requerido </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className="row">
                                         <div className="col">

@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import ChargeForm from "./ChargeForm/ChargeForm";
-import PaySucces from "./PaySucces/PaySucces";
+import SuccessCharge from './SuccessCharge/SuccessCharge'
 
 
 
@@ -8,8 +8,7 @@ const VirtualPoint = () => {
 
     const [modal,setModal] = useState(false);
 
-
-    const [pago,setPago] = useState({
+    const [cobro,setCobro] = useState({
 
         ref : '#011115f',
         amount : '1000',
@@ -27,13 +26,10 @@ const VirtualPoint = () => {
     return (
 
         <div>
-
             <ChargeForm onPayClick={toggle} />
-
-            <PaySucces onOkClick={toggle} title="my modal" modal={modal} onToggle={toggle} pago={pago}>
-                <p>cuerpo  del modal</p>    
-            </PaySucces>
-
+            <SuccessCharge onOkClick={toggle} title="Modal de cobro" modal={modal} onToggle={toggle} cobro={cobro}>
+                <p>Modal de Cobro</p>
+            </SuccessCharge>
         </div>
 
     )
