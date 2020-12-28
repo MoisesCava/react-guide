@@ -9,7 +9,7 @@ import PhoneNumber from "../../Commoms/PhoneNumber/PhoneNumber";
 
 
 
-const ChargeForm = () => (
+const ChargeForm = ({onPayClick}) => (
 
 
     <div className="PaymentButton py-5">
@@ -84,7 +84,7 @@ const ChargeForm = () => (
 
                                         </div>
                                         <div className="col">
-                                            <button type="button" className="btn btn-success btn-block"> Pagar </button>
+                                            <button type="button" className="btn btn-success btn-block" onClick={onPayClick}> Pagar </button>
                                         </div>
                                     </div>
                                 </form>

@@ -4,7 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 
 import PaymentButton from './PaymentButton/PaymentButton'
-import ChargeForm from './component/virtualPoint/ChargeForm/ChargeForm';
+import VirtualPoint from './component/virtualPoint/VirtualPoint';
 
 
 const app = props => {
@@ -27,7 +27,7 @@ const app = props => {
         </header>
 
         <Route path="/" exact component={PaymentButton} />
-        <Route path="/virtual-point" exact component={ChargeForm} />
+        <Route path="/virtual-point" exact component={VirtualPoint} />
 
       </Router>
     </div>
