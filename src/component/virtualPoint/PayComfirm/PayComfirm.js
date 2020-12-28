@@ -1,20 +1,14 @@
-
 import React from "react";
-import Bank from "../../Commons/Bank/Bank";
-import DNI from "../../Commons/DNI/DNI";
+
+
 import OTP from "../../Commons/OTP/OTP";
-import PhoneNumber from "../../Commons/PhoneNumber/PhoneNumber";
 
 
-
-
-
-
-
-const ChargeForm = ({onPayClick}) => (
-
+const PayComfirm = ({ onBackClick, onPayClick }) => (
 
     <div className="PaymentButton py-5">
+
+        {console.log(onPayClick)}
         <div className="row">
             <div className="col-md-12">
                 <h1> Virtual Point </h1>
@@ -22,33 +16,30 @@ const ChargeForm = ({onPayClick}) => (
                     <div id="formcard" className="col-md-6 mx-auto">
                         <div className="card">
                             <div className="card-header text-white bg-primary">
-                                <h3 className="mb-0">Pagos 11.11</h3>
+                                <h3 className="mb-0">Confirmar pago</h3>
                             </div>
                             <div className="card-body">
+
+
+
                                 <form className="form" autoComplete="on" id="paymentform">
                                     <div className="form-group">
 
 
-                                        <PhoneNumber />
-
-
-                                        <DNI/>
-
-
                                         <div className="row form-group text-left">
-                                            
-                                            <Bank/>
 
-                                            <div className="col-sm-3">
-                                                <label> Tipo Moneda </label>
-                                                <select className="form-control" id="banco">
-                                                    <option> Bsf. </option>
-                                                    <option> $ </option>
 
-                                                </select>
-                                            </div>
+                                            <label> Tipo Moneda </label>
+                                            <select className="form-control" id="banco">
+                                                <option> Bsf. </option>
+                                                <option> $ </option>
+
+                                            </select>
+
 
                                         </div>
+
+
 
                                         <div className="row form-group text-left">
                                             <div className="col">
@@ -66,12 +57,12 @@ const ChargeForm = ({onPayClick}) => (
                                             </div>
                                         </div>
 
-                                        <OTP/>
+                                        <OTP />
 
                                     </div>
                                     <div className="row">
                                         <div className="col">
-                                            <button type="button" className="btn btn-secondary btn-block"> Cancelar </button>
+                                            <button type="button" className="btn btn-secondary btn-block" onClick={onBackClick}> Volver </button>
 
                                         </div>
                                         <div className="col">
@@ -79,6 +70,10 @@ const ChargeForm = ({onPayClick}) => (
                                         </div>
                                     </div>
                                 </form>
+
+
+
+
                             </div>
                         </div>
                     </div>
@@ -90,6 +85,4 @@ const ChargeForm = ({onPayClick}) => (
 )
 
 
-
-
-export default ChargeForm;
+export default PayComfirm;
