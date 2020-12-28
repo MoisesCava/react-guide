@@ -3,7 +3,7 @@ import './App.css';
 
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 
-import PaymentButton from './PaymentButton/PaymentButton'
+import PaymentButton from '../src/component/PaymentButton/PaymentButton'
 import ChargeForm from './component/virtualPoint/ChargeForm/ChargeForm';
 
 
