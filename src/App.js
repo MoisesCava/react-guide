@@ -19,7 +19,7 @@ const app = props => {
 
           <nav>
             <ul>
-              <li> <NavLink to="/">PaymentButton</NavLink> </li>
+              <li> <NavLink to="/" exact>PaymentButton</NavLink> </li>
               <li> <NavLink to="/virtual-point"> Virtual point </NavLink></li>
             </ul>
           </nav>
