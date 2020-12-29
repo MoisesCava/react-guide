@@ -9,6 +9,7 @@ import Refund from './component/Refund/Refund'
 import SignIn from './component/Users/SignIn/SignIn'
 import SignUp from './component/Users/SignUp/SignUp'
 import Dashboard from './component/Dashboard/Darshboard';
+import TransactionsList from './component/TransactionsList/TransactionsList';
 
 
 
@@ -47,6 +48,9 @@ const app = props => {
                 <li className="nav-item">
                   <NavLink to="dashboard" className="nav-link" > Dashboard </NavLink>
                 </li>
+                <li className="nav-item">
+                  <NavLink to="/lista-transacciones" className="nav-link" > Lista Transacciones </NavLink>
+                </li>
               </ul>
             </div>
           </nav>
@@ -59,6 +63,8 @@ const app = props => {
         <Route path="/signin" exact component={SignIn} />
         <Route path="/signup" exact component={SignUp} />
         <Route path="/dashboard" exact component={Dashboard}/>
+        <Route path="/lista-transacciones" exact component={TransactionsList}/>
+
       </Router>
     </div>
   );
