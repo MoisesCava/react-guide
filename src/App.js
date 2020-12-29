@@ -9,6 +9,7 @@ import Refund from './component/Refund/Refund'
 import SignIn from './component/Users/SignIn/SignIn'
 import SignUp from './component/Users/SignUp/SignUp'
 import Dashboard from './component/Dashboard/Darshboard';
+import Statistics from './component/Statistics/Statistics';
 
 
 
@@ -59,6 +60,7 @@ const app = props => {
         <Route path="/signin" exact component={SignIn} />
         <Route path="/signup" exact component={SignUp} />
         <Route path="/dashboard" exact component={Dashboard}/>
+        <Route path="/dashboard-statistics" exact component={Statistics} />
       </Router>
     </div>
   );

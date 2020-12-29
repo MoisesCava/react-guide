@@ -1,18 +1,27 @@
-import React from "react";
+import React,{useState} from "react";
 import PhoneNumber from "../Commons/PhoneNumber/PhoneNumber";
 import Bank from "../Commons/Bank/Bank";
 import DNI from "../Commons/DNI/DNI";
+import Select from 'react-select'
 const Refund = (props) => {
+  const options = [
+    {value: '111222g', label: '111222g'},
+    {value: '222333d', label: '222333d'},
+    {value: '333444b', label:'333444b'},
+    {value: '444555l', label: '444555l'}
+  ]
+
+
   return (
     <div className="refund">
       <div className="row">
         <div className="col-md-12">
-          <h1>Refund</h1>
+          <h1>Reembolso</h1>
           <div className="row">
             <div className="col-md-6 mx-auto">
               <div className="card">
                 <div className="card-header text-white bg-primary">
-                  <h3 className="mb-0">Pagos 11.11</h3>
+                  <h3 className="mb-0">Reembolso</h3>
                 </div>
                 <div className="card-body">
                   <form className="form" autoComplete="on">
@@ -20,14 +29,12 @@ const Refund = (props) => {
                       <div className="row form-group text-left">
                         <div className="col">
                           <label> Numero de Referencia </label>
-                          <input
-                            type="text"
-                            className="form-control"
-                            required
+                          <div>
+                          <Select
+                          options={options}
+                          
                           />
-                          <div className="invalid-feedback">
-                            {" "}
-                            Este campo es requerido{" "}
+
                           </div>
                         </div>
                       </div>
