@@ -31,7 +31,7 @@ const Dashboard = () => {
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <span data-feather="file">
-                                            <Icon.File className="feather" />
+                                            <Icon.DollarSign className="feather" />
                                         </span>
               Cobrar
             </a>
@@ -39,15 +39,23 @@ const Dashboard = () => {
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
                                         <span data-feather="shopping-cart">
-                                            <Icon.ShoppingCart className="feather" />
+                                            <Icon.XSquare className="feather" />
                                         </span>
               Anular
             </a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">
+                                        <span data-feather="shopping-cart">
+                                            <Icon.List className="feather" />
+                                        </span>
+              Lista de Transacciones
+            </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#">
                                         <span data-feather="users">
-                                            <Icon.Users className="feather" />
+                                            <Icon.PieChart className="feather" />
                                         </span>
               Estadísticas
             </a>
@@ -72,7 +80,7 @@ const Dashboard = () => {
                         <div>
                             <MyChart />
                         </div>
-                        <h2>Transacciones</h2>
+                        <h2>Lista de Operadores</h2>
                         <div className="table-responsive">
                             <table className="table table-striped table-sm">
                                 <thead>
