@@ -9,6 +9,7 @@ import Refund from './component/Refund/Refund'
 import SignIn from './component/Users/SignIn/SignIn'
 import SignUp from './component/Users/SignUp/SignUp'
 import Dashboard from './component/Dashboard/Darshboard';
+import OperatorCRUD from './component/Dashboard/OperatorDashboard/OperatorDashboard';
 
 
 
@@ -30,22 +31,25 @@ const app = props => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item active">
-                  <NavLink to="/" className="nav-link">PaymentButton</NavLink>
+                  <NavLink to="/" className="nav-link">Botón de pago</NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/virtual-point" className="nav-link" > Virtual point </NavLink>
+                  <NavLink to="/virtual-point" className="nav-link" > Punto VirtualPoint </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/refund" className="nav-link" > Refund </NavLink>
+                  <NavLink to="/refund" className="nav-link" > Reembolso </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/signin" className="nav-link" >Sign In</NavLink>
+                  <NavLink to="/signin" className="nav-link" >Regitro</NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="signup" className="nav-link" > Sign Up </NavLink>
+                  <NavLink to="signup" className="nav-link" > Inicio de Sesión </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="dashboard" className="nav-link" > Dashboard </NavLink>
+                  <NavLink to="dashboard" className="nav-link" > Tablero </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="operator-crud" className="nav-link" > Tablero del Operador </NavLink>
                 </li>
               </ul>
             </div>
@@ -59,6 +63,7 @@ const app = props => {
         <Route path="/signin" exact component={SignIn} />
         <Route path="/signup" exact component={SignUp} />
         <Route path="/dashboard" exact component={Dashboard}/>
+        <Route path="/operator-crud" exact component={OperatorCRUD}/>
       </Router>
     </div>
   );
