@@ -3,6 +3,7 @@ import Email from "../../Commons/Email/Email";
 import FirstName from "../../Commons/FirstName/FirstName";
 import LastName from "../../Commons/LastName/LastName";
 import Password from '../../Commons/Password/Password'
+import PhoneNumber from "../../Commons/PhoneNumber/PhoneNumber";
 
 const SignUp = (props) => {
   return (
@@ -23,6 +24,7 @@ const SignUp = (props) => {
                         <LastName />
                         <Email />
                         <Password />
+                        <PhoneNumber/>
                         <button className="btn btn-success btn-block">Create Account</button>
                     </form>
                   </div>

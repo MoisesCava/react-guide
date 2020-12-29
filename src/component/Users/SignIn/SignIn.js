@@ -1,6 +1,7 @@
 import React from "react";
 import Email from "../../Commons/Email/Email";
 import Password from "../../Commons/Password/Password";
+import PhoneNumber from "../../Commons/PhoneNumber/PhoneNumber";
 
 const SignIn = (props) => {
   return (
@@ -19,6 +20,7 @@ const SignIn = (props) => {
                     <form className="form" autoComplete="on">
                       <Email />
                       <Password />
+                      <PhoneNumber/>
                       <button className="btn btn-success btn-block">
                         Enter
                       </button>
