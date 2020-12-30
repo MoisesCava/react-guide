@@ -1,9 +1,10 @@
 import React from 'react'
+import OperatorBalance from '../../Dashboard/Chart/OperatorChart/OperatorBalance'
 
 const OperatorHighSales = (props) => {
     return (
         <div>
-            Operador con mayor Transacciones
+            <OperatorBalance />
         </div>
     )
 }

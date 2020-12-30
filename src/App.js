@@ -15,8 +15,10 @@ import Statistics from './component/Statistics/Statistics';
 import TransactionsList from './component/TransactionsList/TransactionsList';
 import OperatorCRUD from './component/Dashboard/OperatorDashboard/OperatorDashboard';
 
+import Transaction from './component/TransactionsList/Transaction/Transaction';
 
 import BranchCRUD from './component/Dashboard/BranchCRUD/BranchCRUD';
+
 
 
 
@@ -51,19 +53,22 @@ const app = props => {
                   <NavLink to="/signin" className="nav-link" >Regitro</NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="signup" className="nav-link" > Inicio de Sesión </NavLink>
+                  <NavLink to="/signup" className="nav-link" > Inicio de Sesión </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="dashboard" className="nav-link" > Tablero </NavLink>
+                  <NavLink to="/dashboard" className="nav-link" > Tablero </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="operator-crud" className="nav-link" > Crud de Operadores </NavLink>
+                  <NavLink to="/operator-crud" className="nav-link" > Tablero del Operador </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink to="branch-crud" className="nav-link" > Crud de Sucursales </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink to="/lista-transacciones" className="nav-link" > Lista Transacciones </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/dashboard-statistics" className="nav-link" > Estadisticas </NavLink>
                 </li>
               </ul>
             </div>
@@ -77,7 +82,9 @@ const app = props => {
         <Route path="/signin" exact component={SignIn} />
         <Route path="/signup" exact component={SignUp} />
         <Route path="/dashboard" exact component={Dashboard}/>
+        <Route path="/lista-transacciones/:ref" exact component={Transaction}/>
         <Route path="/lista-transacciones" exact component={TransactionsList}/>
+        <Route path="/dashboard-statistics" exact component={Statistics}/>
 
         <Route path="/operator-crud" exact component={OperatorCRUD}/>
         <Route path="/branch-crud" exact component={BranchCRUD}/>

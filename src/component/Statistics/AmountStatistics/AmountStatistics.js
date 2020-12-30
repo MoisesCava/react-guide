@@ -1,11 +1,11 @@
 import React from 'react';
-
+import OperatorTransaction from '../../Dashboard/Chart/OperatorChart/OperatorTransaction'
 
 const AmountStatistics = (props) => {
     return (
 
         <div>
-            montos
+            <OperatorTransaction />
         </div>
     )
 }

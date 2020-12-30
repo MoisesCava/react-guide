@@ -1,4 +1,5 @@
 import React from 'react'
+import OperatorTransaction from '../../Dashboard/Chart/OperatorChart/OperatorTransaction'
 
 
 const DateStatistics = (props) => {
@@ -6,7 +7,7 @@ const DateStatistics = (props) => {
 
     return (
         <div>
-            fechas
+            <OperatorTransaction />
         </div>
     )
 }
