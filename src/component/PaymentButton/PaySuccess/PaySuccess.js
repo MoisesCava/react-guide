@@ -43,8 +43,9 @@ const PaySucces = ({ onClick, title, onToggle, modal, pago }) => (
 
 
         <ModalFooter>
-            <Button color="primary" onClick={onClick}>Do Something</Button>{' '}
             <Button color="secondary" onClick={onToggle}>Cancel</Button>
+            <Button color="primary" onClick={onClick}>Imprimir</Button>
+            <Button color="info" onClick={onToggle}>Enviar al correo</Button>
         </ModalFooter>
 
 

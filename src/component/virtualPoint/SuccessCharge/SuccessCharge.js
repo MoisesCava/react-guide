@@ -40,8 +40,9 @@ const SuccessCharge = ({ onOkClick, title, onToggle, modal, cobro }) => (
         </ModalBody>
 
         <ModalFooter>
-            <Button color="primary" onClick={onOkClick}>Do Something</Button>{' '}
             <Button color="secondary" onClick={onToggle}>Cancel</Button>
+            <Button color="primary" onClick={onOkClick}>Imprimir</Button>{' '}
+            <Button color="info" onClick={onToggle}>Enviar al correo</Button>
         </ModalFooter>
 
     </Modal>
