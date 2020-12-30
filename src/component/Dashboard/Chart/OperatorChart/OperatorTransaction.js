@@ -20,11 +20,18 @@ const OperatorTransaction = () => {
                 backgroundColor: color
             }
         ]
+        
     };
 
     return (
         < div className="chart" >
-            <Bar data={data} />
+            <Bar data={data} 
+            width={600}
+            height={400}
+            options={{
+            maintainAspectRatio: false
+            
+            }}/>
         </div >
     );
 }

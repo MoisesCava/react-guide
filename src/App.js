@@ -9,10 +9,17 @@ import Refund from './component/Refund/Refund'
 import SignIn from './component/Users/SignIn/SignIn'
 import SignUp from './component/Users/SignUp/SignUp'
 import Dashboard from './component/Dashboard/Darshboard';
+
+import Statistics from './component/Statistics/Statistics';
+
 import TransactionsList from './component/TransactionsList/TransactionsList';
 import OperatorCRUD from './component/Dashboard/OperatorDashboard/OperatorDashboard';
+
 import Transaction from './component/TransactionsList/Transaction/Transaction';
+
 import BranchCRUD from './component/Dashboard/BranchCRUD/BranchCRUD';
+
+
 
 
 
@@ -60,6 +67,9 @@ const app = props => {
                 <li className="nav-item">
                   <NavLink to="/lista-transacciones" className="nav-link" > Lista Transacciones </NavLink>
                 </li>
+                <li className="nav-item">
+                  <NavLink to="/dashboard-statistics" className="nav-link" > Estadisticas </NavLink>
+                </li>
               </ul>
             </div>
           </nav>
@@ -74,7 +84,7 @@ const app = props => {
         <Route path="/dashboard" exact component={Dashboard}/>
         <Route path="/lista-transacciones/:ref" exact component={Transaction}/>
         <Route path="/lista-transacciones" exact component={TransactionsList}/>
- 
+        <Route path="/dashboard-statistics" exact component={Statistics}/>
 
         <Route path="/operator-crud" exact component={OperatorCRUD}/>
         <Route path="/branch-crud" exact component={BranchCRUD}/>

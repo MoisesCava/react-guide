@@ -1,18 +1,11 @@
 import React from "react";
 
-import './Dashboard.css'
+import "./Dashboard.css";
 
-
-
-import * as Icon from 'react-feather';
+import * as Icon from "react-feather";
 import MyChart from "./Chart/Chart";
-import OperatorTransaction from "./Chart/OperatorChart/OperatorTransaction";
-import OperatorBalance from "./Chart/OperatorChart/OperatorBalance";
-
 
 const Dashboard = () => {
-
-
 
     return (
 
@@ -80,7 +73,7 @@ const Dashboard = () => {
                         </div>
 
                         <div>
-                            <OperatorBalance/>
+                            <MyChart />
                         </div>
                         <h2>Lista de Operadores</h2>
                         <div className="table-responsive">
@@ -124,8 +117,10 @@ const Dashboard = () => {
                     </main>
                 </div>
             </div>
-        </div>
-    );
-}
+    </div>
+          
+        
+  )
+};
 
 export default Dashboard;

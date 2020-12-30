@@ -24,7 +24,13 @@ const OperatorBalance = () => {
 
     return (
         < div className="chart" >
-            <Line data={data} />
+            <Line data={data} 
+            width={600}
+            height={400}
+            options={{
+            maintainAspectRatio: false
+            
+            }}/>
         </div >
     );
 }
