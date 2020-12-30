@@ -10,31 +10,55 @@ const OperatorCRUD = () => {
                 branch: 'Sucursal 1',
                 email: 'operado1@gmail.com',
                 phone: '04124444333',
-                id_card: 27888234
+                id_card: 27888234,
+                block: true,
+                id: 1
             },
             {
                 name: 'Operador 2',
                 branch: 'Sucursal 2',
                 email: 'operado2@gmail.com',
                 phone: '04124444333',
-                id_card: 27888234
+                id_card: 27888234,
+                block: true,
+                id: 2
             },
             {
                 name: 'Operador 3',
                 branch: 'Sucursal 3',
                 email: 'operado3@gmail.com',
                 phone: '04124444333',
-                id_card: 27888234
+                id_card: 27888234,
+                block: true,
+                id: 3
             },
             {
                 name: 'Operador 4',
                 branch: 'Sucursal 4',
                 email: 'operado4@gmail.com',
                 phone: '04124444333',
-                id_card: 27888234
+                id_card: 27888234,
+                block: true,
+                id: 4
             }
         ]
     );
+
+    const blockHandler = (id) => {
+        const operatorId = operatorState.findIndex(o => {
+            return o.id === id;
+        });
+
+        const operator = { ...operatorState[operatorId] };
+        const value = operator.block;
+        operator.block = !value;
+
+        const operators = [...operatorState];
+        operators[operatorId] = operator;
+
+        setOperatorSrtate(operators)
+
+    }
 
     return (
         <div className="container">
@@ -60,31 +84,37 @@ const OperatorCRUD = () => {
                                 <tbody>
                                     {
                                         operatorState.map((operator, index) => {
-                                            return (                                            <tr>
-                                                <td className="pl-4">1</td>
-                                                <td>
-                                                    <h5 className="font-medium mb-0">{operator.name}</h5>
-                                                </td>
-                                                <td>
-                                                    <span className="text-muted">{operator.name}</span><br></br>
-                                                </td>
-                                                <td>
-                                                    <span className="text-muted">{operator.name}</span><br></br>
+                                            return (
+                                                <tr key={index}>
+                                                    <td className="pl-4">1</td>
+                                                    <td>
+                                                        <h5 className="font-medium mb-0">{operator.name}</h5>
+                                                    </td>
+                                                    <td>
+                                                        <span className="text-muted">{operator.name}</span><br></br>
+                                                    </td>
+                                                    <td>
+                                                        <span className="text-muted">{operator.name}</span><br></br>
 
-                                                </td>
-                                                <td>
-                                                    <span className="text-muted">{operator.name}</span>
-                                                </td>
-                                                <td>
-                                                    <span className="text-muted">{operator.name}</span>
-                                                </td>
-                                                <td>
-                                                    <button type="button" id="btn-circle" className="btn btn-outline-info btn-circle btn-lg btn-circle"><Icon.Eye className="manage-btn" /></button>
-                                                    <button type="button" id="btn-circle" className="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"><Icon.Edit /></button>
-                                                    <button type="button" id="btn-circle" className="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"><Icon.Trash2 /></button>
-                                                    <button type="button" id="btn-circle" className="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"><Icon.Lock /></button>
-                                                </td>
-                                            </tr>) ;
+                                                    </td>
+                                                    <td>
+                                                        <span className="text-muted">{operator.name}</span>
+                                                    </td>
+                                                    <td>
+                                                        <span className="text-muted">{operator.name}</span>
+                                                    </td>
+                                                    <td>
+                                                        <button type="button" id="btn-circle" className="btn btn-outline-info btn-circle btn-lg btn-circle"><Icon.Eye className="manage-btn" /></button>
+                                                        <button type="button" id="btn-circle" className="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"><Icon.Edit /></button>
+                                                        <button type="button" id="btn-circle" className="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"><Icon.Trash2 /></button>
+                                                        {operator.block == true ?
+                                                            <button onClick={() => blockHandler(operator.id)} type="button" id="btn-circle" className="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"><Icon.Lock /></button>
+                                                            :
+                                                            <button onClick={() => blockHandler(operator.id)} type="button" id="btn-circle" className="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"><Icon.Unlock /></button>
+                                                        }
+                                                    </td>
+                                                </tr>
+                                            );
                                         })
                                     }
                                 </tbody>
