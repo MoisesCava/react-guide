@@ -11,6 +11,7 @@ import SignUp from './component/Users/SignUp/SignUp'
 import Dashboard from './component/Dashboard/Darshboard';
 import TransactionsList from './component/TransactionsList/TransactionsList';
 import OperatorCRUD from './component/Dashboard/OperatorDashboard/OperatorDashboard';
+import Transaction from './component/TransactionsList/Transaction/Transaction';
 
 
 
@@ -44,13 +45,13 @@ const app = props => {
                   <NavLink to="/signin" className="nav-link" >Regitro</NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="signup" className="nav-link" > Inicio de Sesión </NavLink>
+                  <NavLink to="/signup" className="nav-link" > Inicio de Sesión </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="dashboard" className="nav-link" > Tablero </NavLink>
+                  <NavLink to="/dashboard" className="nav-link" > Tablero </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="operator-crud" className="nav-link" > Tablero del Operador </NavLink>
+                  <NavLink to="/operator-crud" className="nav-link" > Tablero del Operador </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink to="/lista-transacciones" className="nav-link" > Lista Transacciones </NavLink>
@@ -67,7 +68,9 @@ const app = props => {
         <Route path="/signin" exact component={SignIn} />
         <Route path="/signup" exact component={SignUp} />
         <Route path="/dashboard" exact component={Dashboard}/>
+        <Route path="/lista-transacciones/:ref" exact component={Transaction}/>
         <Route path="/lista-transacciones" exact component={TransactionsList}/>
+ 
 
         <Route path="/operator-crud" exact component={OperatorCRUD}/>
       </Router>

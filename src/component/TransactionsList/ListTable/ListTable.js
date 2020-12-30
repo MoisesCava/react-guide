@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
+
 
 import "./ListTable.css"
 
@@ -8,10 +9,10 @@ import "./ListTable.css"
 
 
 
-const ListTable = ({ transactions, currentPath }) => (
+const ListTable = ({ transactions ,...props }) => (
 
 
-    <div>
+    <div>   
         <table className="table">
             <thead className="bg-primary">
                 <tr>
@@ -30,7 +31,7 @@ const ListTable = ({ transactions, currentPath }) => (
                     transactions.map(transaction => {
                         return (
 
-                            <tr key={transaction.referencia}>
+                            <tr onClick={ ()=>{ props.history.push(props.match.path + "/" + transaction.referencia) } } key={transaction.referencia}>
 
                                 <th>
                                     {transaction.referencia}
@@ -73,4 +74,4 @@ const ListTable = ({ transactions, currentPath }) => (
 
 
 
-export default ListTable;
+export default withRouter(ListTable);

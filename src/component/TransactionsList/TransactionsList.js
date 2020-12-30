@@ -11,12 +11,11 @@ import ListTable from "./ListTable/ListTable";
 
 const TransactionsList = ({...props, match}) => {
 
-    console.log(props);
 
     const initialList = [
 
         {
-            referencia : "#01214FEAG",
+            referencia : "01214FEAG",
             monto : "15000",
             status : "aprobado",
             fecha : "14/01/200",
@@ -27,7 +26,7 @@ const TransactionsList = ({...props, match}) => {
         },
         
         {
-            referencia : "#02214FEAG",
+            referencia : "02214FEAG",
             monto : "33000",
             status : "aprobado",
             fecha : "14/01/200",
@@ -38,7 +37,7 @@ const TransactionsList = ({...props, match}) => {
         },
         
         {
-            referencia : "#03214FEAG",
+            referencia : "03214FEAG",
             monto : "1500",
             status : "rechazado",
             fecha : "14/01/200",
@@ -49,7 +48,7 @@ const TransactionsList = ({...props, match}) => {
         },
         
         {
-            referencia : "#04214FEAG",
+            referencia : "04214FEAG",
             monto : "2000",
             status : "aprobado",
             fecha : "14/01/200",
@@ -70,7 +69,7 @@ const TransactionsList = ({...props, match}) => {
             <Filtros />
 
             <h3>Operaciones</h3>
-            <ListTable transactions={transactions} currentPath={match.path} />
+            <ListTable transactions={transactions} />
         </div>
         
     )
