@@ -10,6 +10,7 @@ import SignIn from './component/Users/SignIn/SignIn'
 import SignUp from './component/Users/SignUp/SignUp'
 import Dashboard from './component/Dashboard/Darshboard';
 import OperatorCRUD from './component/Dashboard/OperatorDashboard/OperatorDashboard';
+import BranchCRUD from './component/Dashboard/BranchCRUD/BranchCRUD';
 
 
 
@@ -49,7 +50,10 @@ const app = props => {
                   <NavLink to="dashboard" className="nav-link" > Tablero </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="operator-crud" className="nav-link" > Tablero del Operador </NavLink>
+                  <NavLink to="operator-crud" className="nav-link" > Crud de Operadores </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="branch-crud" className="nav-link" > Crud de Sucursales </NavLink>
                 </li>
               </ul>
             </div>
@@ -64,6 +68,7 @@ const app = props => {
         <Route path="/signup" exact component={SignUp} />
         <Route path="/dashboard" exact component={Dashboard}/>
         <Route path="/operator-crud" exact component={OperatorCRUD}/>
+        <Route path="/branch-crud" exact component={BranchCRUD}/>
       </Router>
     </div>
   );

@@ -6,6 +6,8 @@ import './Dashboard.css'
 
 import * as Icon from 'react-feather';
 import MyChart from "./Chart/Chart";
+import OperatorTransaction from "./Chart/OperatorChart/OperatorTransaction";
+import OperatorBalance from "./Chart/OperatorChart/OperatorBalance";
 
 
 const Dashboard = () => {
@@ -78,7 +80,7 @@ const Dashboard = () => {
                         </div>
 
                         <div>
-                            <MyChart />
+                            <OperatorBalance/>
                         </div>
                         <h2>Lista de Operadores</h2>
                         <div className="table-responsive">
