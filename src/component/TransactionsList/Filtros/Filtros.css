@@ -1,0 +1,17 @@
+.filters-wrapper {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+
+
+
+.flex-row {
+
+    display: flex;
+    justify-content: center;
+
+}
