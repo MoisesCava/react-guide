@@ -11,7 +11,11 @@ import SignUp from './component/Users/SignUp/SignUp'
 import Dashboard from './component/Dashboard/Darshboard';
 import TransactionsList from './component/TransactionsList/TransactionsList';
 import OperatorCRUD from './component/Dashboard/OperatorDashboard/OperatorDashboard';
+<<<<<<< HEAD
 import Transaction from './component/TransactionsList/Transaction/Transaction';
+=======
+import BranchCRUD from './component/Dashboard/BranchCRUD/BranchCRUD';
+>>>>>>> f72f7c3e67cf87e1617a4ef72918c16e3d17bc0b
 
 
 
@@ -54,6 +58,9 @@ const app = props => {
                   <NavLink to="/operator-crud" className="nav-link" > Tablero del Operador </NavLink>
                 </li>
                 <li className="nav-item">
+                  <NavLink to="branch-crud" className="nav-link" > Crud de Sucursales </NavLink>
+                </li>
+                <li className="nav-item">
                   <NavLink to="/lista-transacciones" className="nav-link" > Lista Transacciones </NavLink>
                 </li>
               </ul>
@@ -73,6 +80,7 @@ const app = props => {
  
 
         <Route path="/operator-crud" exact component={OperatorCRUD}/>
+        <Route path="/branch-crud" exact component={BranchCRUD}/>
       </Router>
     </div>
   );
