@@ -101,7 +101,7 @@ Add notes about how to use the system.
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
-Add additional notes about how to deploy this on a live system.
+https://skydropxtest-reinel.herokuapp.com/shipment
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
