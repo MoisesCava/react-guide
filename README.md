@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="src\assets\Skydropx-logo.png" alt="Project logo"></a>
+ <img width=200px height=200px src="docs\Skydropx-logo.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">Skydrop challenge</h3>
@@ -108,14 +108,18 @@ Aqui va el general de que usaste para contruir la apliacion
 
 aqui van los bugs y sus respectivas imagenes
 
+<p align="center">
+Aqui la explicacion
+ <img width=200px height=200px src="docs\bug_1.jpeg" alt="Project logo">
+</p>
+
+
 ```
 Give examples
 ```
 ## ✍️ Authors <a name = "authors"></a>
 
 Aqui va tu info. Puedes poner el enlace a tu perfil de Linkedin [Reinel](https://www.linkedin.com/in/reinelarteaga/)
-
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
 
 See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
 
