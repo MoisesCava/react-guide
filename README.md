@@ -10,7 +10,11 @@
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 [![Bugs](https://img.shields.io/badge/bugs-1-important.svg)]()
 [![Axios](https://img.shields.io/badge/axios-0.21.1-blue.svg)]()
-[![Material-UI](https://img.shields.io/badge/material--ui-0.21.1-blue.svg)]()
+[![React-Hook-Forms](https://img.shields.io/badge/react--hook--form-6.15.5-blue.svg)]()
+[![Redux](https://img.shields.io/badge/redux-4.0.5-blue.svg)]()
+[![Redux-Thunk](https://img.shields.io/badge/redux--thunk-2.3.0-blue.svg)]()
+
+[![Material-UI](https://img.shields.io/badge/material--ui-4.11.3-blue.svg)]()
 [![Dependencias](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](#about)
 
 </div>
