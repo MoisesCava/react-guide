@@ -22,7 +22,7 @@
 
 ## 📝 Table of Contents
 
-- [About](#about)
+- [Reinel es marico](#about)
 - [Getting Started](#getting_started)
 - [Deployment](#deployment)
 - [Usage](#usage)
