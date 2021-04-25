@@ -110,7 +110,7 @@ aqui van los bugs y sus respectivas imagenes
 
 - Explicacion de esta imagen
 <p align="center">
- <img width="100%" height=200px src="docs\bug_1.jpeg" alt="Project logo">
+ <img  src="docs\bug_1.jpeg" alt="Project logo">
 </p>
 
 
