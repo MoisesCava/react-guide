@@ -108,8 +108,8 @@ Aqui va el general de que usaste para contruir la apliacion
 
 aqui van los bugs y sus respectivas imagenes
 
+- Explicacion de esta imagen
 <p align="center">
-Aqui la explicacion
  <img width=200px height=200px src="docs\bug_1.jpeg" alt="Project logo">
 </p>
 
