@@ -13,6 +13,10 @@
 [![React-Hook-Forms](https://img.shields.io/badge/react--hook--form-6.15.5-blue.svg)]()
 [![Redux](https://img.shields.io/badge/redux-4.0.5-blue.svg)]()
 [![Redux-Thunk](https://img.shields.io/badge/redux--thunk-2.3.0-blue.svg)]()
+[![React-Numer-Format](https://img.shields.io/badge/react--number--format-4.5.5-blue.svg)]()
+[![Testing-Library](https://img.shields.io/badge/testing--library/jest--dom-5.11.10-blue.svg)]()
+[![Testing-Library](https://img.shields.io/badge/testing--library/react-11.2.6-blue.svg)]()
+[![Testing-Library](https://img.shields.io/badge/testing--library/user--event-5.11.10-blue.svg)]()
 
 [![Material-UI](https://img.shields.io/badge/material--ui-4.11.3-blue.svg)]()
 [![Dependencias](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](#about)
@@ -113,6 +117,25 @@ aqui van los bugs y sus respectivas imagenes
  <img  src="docs\bug_1.jpeg" alt="Project logo">
 </p>
 
+- Explicacion de esta imagen
+<p align="center">
+ <img  src="docs\bug_2.jpeg" alt="Project logo">
+</p>
+
+- Explicacion de esta imagen
+<p align="center">
+ <img  src="docs\bug_3.jpeg" alt="Project logo">
+</p>
+
+- Explicacion de esta imagen
+<p align="center">
+ <img  src="docs\bug_4.jpeg" alt="Project logo">
+</p>
+
+- Explicacion de esta imagen
+<p align="center">
+ <img  src="docs\bug_5.jpeg" alt="Project logo">
+</p>
 
 ```
 Give examples
