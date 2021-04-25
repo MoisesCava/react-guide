@@ -49,6 +49,14 @@ What things you need to install the software and how to install them.
 Give examples
 ```
 
+### 🐛 Bugs Report
+
+aqui van los bugs y sus respectivas imagenes
+
+```
+Give examples
+```
+
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running.
