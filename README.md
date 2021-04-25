@@ -8,16 +8,16 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+[![Bugs](https://img.shields.io/badge/bugs-1-important.svg)]()
+
+
 [![Dependencias](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](#about)
 
 </div>
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> Breve descripción
     <br> 
 </p>
 
@@ -35,53 +35,45 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+Escribe 1 o 2 párrafos del objetivo del proyecto. (Normalmente se usa si el proyecto tiene un fin pero no se si este que es una prueba sea el caso)
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+Aquí van las instrucciones de cómo correr una copia del proyecto de forma local. Aqui [deployment](#deployment) el link al proyecto desplegado.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them.
+Aquí va todo lo que necesitas intalar y que instalar para poder correr el proyecto.
 
 ```
-Give examples
-```
-
-### 🐛 Bugs Report
-
-aqui van los bugs y sus respectivas imagenes
-
-```
-Give examples
+Give command examples
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
+Aquí va el paso a paso con ejemplos de como correr el entorno de desarrollo.
 
-Say what the step will be
+Paso 1
 
 ```
 Give the example
 ```
 
-And repeat
+Paso 2
 
 ```
 until finished
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
+Puedes terminar la vaina con un ejemplo de la vaina corriendo, que si un gif.
 
 ## 🔧 Running the tests <a name = "tests"></a>
 
-Explain how to run the automated tests for this system.
+Aquí explicar como correr las pruebas automaticas.
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
+Explica que prueban y el porquéExplica que prueban y el porqué
 
 ```
 Give an example
@@ -89,27 +81,35 @@ Give an example
 
 ### And coding style tests
 
-Explain what these tests test and why
+Explica que prueban y el porqué
 
 ```
 Give an example
 ```
+## 🐛 Bugs Report
 
+aqui van los bugs y sus respectivas imagenes
+
+```
+Give examples
+```
 ## 🎈 Usage <a name="usage"></a>
 
-Add notes about how to use the system.
+Aqui puedes añadir notas de como usar la aplicacion, flujo y tal.
 
 ## 🚀 Deployment <a name = "deployment"></a>
+Aqui va todo lo referente a como desplegar (en este caso no aplica porque ya esta desplegado, creo)
 [Heroku](https://skydropxtest-reinel.herokuapp.com/shipment) - Aplicación en Heroku
 
 ## ⛏️ Built Using <a name = "built_using"></a>
-
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
+Aqui va el general de que usaste para contruir la apliacion 
+- [Material-UI](https://material-ui.com/) - Libreria?
+- [React](https://es.reactjs.org/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
 ## ✍️ Authors <a name = "authors"></a>
+
+Aqui va tu info. Puedes poner el enlace a tu perfil de Linkedin [Reinel](https://www.linkedin.com/in/reinelarteaga/)
 
 - [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
 
