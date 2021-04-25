@@ -27,11 +27,13 @@
 
 ## 📝 Table of Contents
 
-- [Reinel es marico](#about)
+- [About](#about)
 - [Getting Started](#getting_started)
+- [Running the tests](#tests)
 - [Deployment](#deployment)
 - [Usage](#usage)
 - [Built Using](#built_using)
+- [Bugs Report](#bugs)
 - [TODO](../TODO.md)
 - [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
@@ -90,13 +92,6 @@ Explica que prueban y el porqué
 ```
 Give an example
 ```
-## 🐛 Bugs Report
-
-aqui van los bugs y sus respectivas imagenes
-
-```
-Give examples
-```
 ## 🎈 Usage <a name="usage"></a>
 
 Aqui puedes añadir notas de como usar la aplicacion, flujo y tal.
@@ -111,6 +106,13 @@ Aqui va el general de que usaste para contruir la apliacion
 - [React](https://es.reactjs.org/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
+## 🐛 Bugs Report <a name = "bugs"></a>
+
+aqui van los bugs y sus respectivas imagenes
+
+```
+Give examples
+```
 ## ✍️ Authors <a name = "authors"></a>
 
 Aqui va tu info. Puedes poner el enlace a tu perfil de Linkedin [Reinel](https://www.linkedin.com/in/reinelarteaga/)
