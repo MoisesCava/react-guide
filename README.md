@@ -108,7 +108,7 @@ Aqui va el general de que usaste para contruir la apliacion
 - [React](https://es.reactjs.org/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 
-## 🐛 Bugs Report <a name = "bugs"></a>
+## 🐞 Bugs Report <a name = "bugs"></a>
 
 aqui van los bugs y sus respectivas imagenes
 
